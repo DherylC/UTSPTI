@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+:root {
+    --COLOR1: #FF0196;
+    --COLOR2: #FFA5DA;
+    --COLOR3: #00C4CC;
+    --COLOR4: #90E5E6;
+    --BLACK: #000000;
+    --DARKGRAY: #222222;
+    --WHITE : #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jersey 10';
+}
+
+body {
+    background-color: var(--DARKGRAY);
+    height: 98vh;
+}
+
+.highlight {
+    display: inline-block;
+    background-color: var(--BLACK) !important;
+    padding: 2px 12px;
+}
+
+.bg-pink {
+    background-color: var(--COLOR1) !important;
+}
+
+.bg-lightpink{
+    background-color: var(--COLOR2) !important;
+}
+
+.bg-blue {
+    background-color: var(--COLOR3) !important;
+}
+
+.bg-lightblue {
+    background-color: var(--COLOR4) !important;
+}
+
+.bg-white {
+    background-color: var(--WHITE) !important;
+}
+
+.bg-white-tp {
+    background-color: #ffffff !important;
+}
+
+.color-pink {
+    color: var(--COLOR1)!important;
+}
+
+.color-lightpink {
+    color: var(--COLOR2)!important;
+}
+
+.color-blue {
+    color: var(--COLOR3)!important;
+}
+
+.color-lightblue {
+    color: var(--COLOR4)!important;
+}
+
+.color-white {
+    color: var(--WHITE)!important;
+}
+
+.color-darkgray {
+    color: var(--DARKGRAY) !important;
+}
+
+.btn {
+    padding: 4px 10px;
+    border: none;
+    background-color: var(--COLOR4) !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    transition: 0.15s ease;
+    display: inline-block !important;
+}
+
+button:hover {
+    transition: 0.15s ease;
+    color: var(--COLOR4) !important;
+    background-color: var(--DARKGRAY) !important;
+}
+
+.action-btn {
+    padding: 2px 10px;
+    border: none;
+    background-color: var(--COLOR4) !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    transition: 0.15s ease;
+    display: none;
+    width: 100%;
+    margin-top: 4px;
+}
+
+#start-screen {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--BLACK);
+    z-index: 100;
+}
+
+#charselect {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#enter-usn {
+    display: none;
+    color: var(--COLOR1)
+}
+
+input[type="text"] {
+    padding: 4px 10px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+}
+
+.statusbar {
+    width: 100%;
+    padding: 10px;
+    min-height: 120px;
+    background-color: var(--BLACK);
+    color: var(--WHITE);
+    z-index: 100;
+    text-align: left;
+}
+
+.display-area {
+    background-color: #90E5E6;
+    min-height: 84vh !important;
+    overflow: scroll;
+    position: relative;
+}
+
+#character {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: absolute !important;
+    transition: 0.1s linear;
+    z-index: 100;
+}
+
+.place {
+    width: 8%;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: var(--COLOR3);
+    position: absolute;
+    z-index: 10;
+    color: var(--WHITE);
+    text-align: center;
+    aspect-ratio: 1/1;
+}
+
+/* POSITION */
+#house       {top: 0%;  left: 0%}
+#office      {top: 5%;  left: 85%}
+#restaurant1 {top: 15%; left: 40%}
+#restaurant2 {top: 80%; left: 70%}
+#restaurant3 {top: 80%; left: 5%}
+#bar         {top: 60%; left: 85%}
+#arcade      {top: 50%; left: 70%}
+#casino      {top: 65%; left: 70%}
+#park        {top: 40%; left: 28%; height: 160px; width: 200px}
+#hospital    {top: 90%; left: 32%; height: 80px; width: 200px}
+#gym         {top: 60%; left: 5%}
+
+.toast{
+    width: 90%;
+}
+
+.toast-container {
+    width: 100%;
+}
